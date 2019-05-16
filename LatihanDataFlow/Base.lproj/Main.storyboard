@@ -55,20 +55,32 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm View Controller-->
         <scene sceneID="Z0W-ip-ei0">
             <objects>
-                <viewController id="frp-0r-eXj" sceneMemberID="viewController">
+                <viewController id="frp-0r-eXj" customClass="ConfirmViewController" customModule="LatihanDataFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nYm-Xc-oMg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es1-8l-bYd">
+                                <rect key="frame" x="55" y="192" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wUO-FS-w8s"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="es1-8l-bYd" id="wUr-Qj-8YD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJJ-Sp-vV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1951" y="114"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="113.83928571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bLK-v2-JJP">

@@ -27,6 +27,12 @@ class ViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ConfirmViewController{
+            destination.fullname = fullNameTextField.text
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fullNameTextField.delegate = self
